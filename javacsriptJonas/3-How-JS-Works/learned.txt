@@ -1,0 +1,50 @@
+javascript engine
+  ejemplos
+
+
+parser - lee el codigo js y se fija en sintaxis
+  viene del javascript engine 
+
+
+parser
+  se convierte en machine code
+    corre en el procesador
+
+-----
+
+execution context 
+  contenedor que alamacena variables y funcoines en donde se evalua ierta parte del codigo
+
+global execution context
+  codigo que no esta dentro de ninguna funcion
+  se asocia con el global object (window object en el browser)
+
+*properties are just variables attached to an object*
+
+execution stack
+  cuando una funcion se invoca, se crea un nuevo execution context que se pone encima del execution stack
+
+----
+
+execution context en detalle
+
+  cada execution context que se crea encima del execution stack cuando se invoca una funcion tiene las siguientes fases
+
+    1. creation phase:
+      
+      crea el variable object(VO)
+        - se crea el argument object que contiene todos los argumentos que tiene la funcion
+        - se escanea por declaraciones de funciones en el codigo del execution context, luego se pone crea una propiedad al VO apuntando a esa funcion por cada una de ellas
+        - se escanea por declaraciones de variables, luego se crea una propiedad al VO y se setea como undefined  
+
+      crea el scope chain
+
+      determina el valor de "this" variable
+
+    2. execution phase :
+
+      ejecuta el código línea por línea
+
+hoisting
+
+  como se puede ver en la creation phase de un execution context, las variables y las funciones están disponibles en el mismo antes de que se pase a la ejecucion de la misma
