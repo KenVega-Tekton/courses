@@ -1,0 +1,12 @@
+todo objeto en js tiene una propiedad prototype de modo que todos pueden realizar inheritance
+
+la propiedad prototype de un objeto es donde residen los metodosy propiedades que queremos que otros objetos hereden cuando sean extensiones de este 
+
+prototype chain:
+  js busca por las propiedaes en los prototypes de los objetos. si no los encuentra los busca en niveles mas arriba (en los padres), hasta llegar a Object. si no lo encuentra, devuelve undefined
+
+/*
+
+  What is really important to note here is that the Person’s prototype is NOT the prototype of the Person itself, BUT of ALL instances that are created through the Person blueprint, like john. So, in other words, the Person’s prototype property is the prototype of john.
+
+*/

@@ -1,0 +1,16 @@
+Primitivas
+  Numbers, Strings, Booleans, Undefined y Null (estos no son objetos)
+
+
+Los objetos no solo son para guardar data
+  es por eso que las funciones y los arreglos son considerados objetos tambien
+
+constructors: son blueprints para instanciar objetos nuevos mas rapidamente
+
+inheritance : cuando un objeto se basa en otro, gana sus propiedades y metodos
+  ejm: athlete es una extension de persona
+
+js es un prototype based language
+
+
+
