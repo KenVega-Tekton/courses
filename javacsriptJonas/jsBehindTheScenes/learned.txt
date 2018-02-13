@@ -13,7 +13,7 @@ parser
 -----
 
 execution context 
-  contenedor que alamacena variables y funcoines en donde se evalua ierta parte del codigo
+  contenedor que alamacena variables y funciones en donde se evalua cierta parte del codigo
 
 global execution context
   codigo que no esta dentro de ninguna funcion

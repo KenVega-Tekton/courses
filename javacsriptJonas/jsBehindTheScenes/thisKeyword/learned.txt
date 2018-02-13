@@ -1,0 +1,11 @@
+para regular function calls
+  this apunta al objeto global
+
+para metodos llamados a traves de objetos
+  this apunta a el objeto que lo llamo
+
+si dentro de un metodo de un objeto, un regular function call ocurre
+  this, dentro de ese regular function call seguirá apuntando a global object
+
+*this realmente adquiere su valor cuando es llamado por un metodo
+  (es que puede ser llamado por varios metodos)

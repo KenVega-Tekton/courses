@@ -1,0 +1,11 @@
+se refiere a que variables podemos acceder en cierta parte del código
+
+cada función crea un nuevo scope, en ese mismo se habilitan algunas variables como accesibles
+
+definiciones importantes:
+
+- lexical scoping: funciones dentro de otras tienen acceso al scope padre
+
+- global scope : scope de la funcion principal, tiene acceso al VO global
+
+- scope chain : una funcion dentro del global scope tiene acceso al scope suyo y al global
